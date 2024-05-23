@@ -1,0 +1,33 @@
+<DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../static/css/main.css" rel="stylesheet">
+  </head>
+  <body>
+      <table>
+        <tr>
+          <th>Person Id</th>
+          <th>Person Name</th>
+          <th>Age</th>
+          <th>Person Nationality Id</th>
+          <th>BirthDate</th>
+          <th></th>
+          <th></th>
+        </tr>
+        {% for record in records %}
+          <tr>
+            <td>{{ record[0] }}</td>
+            <td>{{ record[1] }}</td>
+            <td>{{ record[2] }}</td>
+            <td>{{ record[3] }}</td>
+            <td>{{ record[4] }}</td>
+          <td><button type="button"><a href="/update/{{record[0]}}">update</a></button></td>
+          <td><button type="button"><a href="/delete/{{record[0]}}">delete</a></button></td>
+          </tr>
+        {% endfor %}
+      </table>
+  </body>
+</html>
