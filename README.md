@@ -18,3 +18,4 @@ The application should provide the following features:
 2. **Read**: View the list of all persons and details of a specific person.
 3. **Update**: Modify the details of an existing person.
 4. **Delete**: Remove a person from the database.
+5. **GUI**: Simple gui to handle these operations.
